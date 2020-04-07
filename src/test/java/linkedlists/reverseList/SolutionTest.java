@@ -14,6 +14,7 @@ public class SolutionTest {
             result += l.val + " -> ";
             l = l.next;
         }
+        System.out.println("result = " + result);
         return result;
     }
 
@@ -36,6 +37,7 @@ public class SolutionTest {
         l2.next = new ListNode(2);
         l2 = l2.next;
         l2.next = new ListNode(1);
+
 
         assertEquals(printLinkedList(l2Head), printLinkedList(s.reverse(l1Head)));
     }
